@@ -1,0 +1,65 @@
+<ion-view view-title="">
+  <ion-content>
+  	<h3 class="title text-center" style="margin-top:10%;">{{title}}</h3>
+ 	<div ng-show="show==1">
+ 		<div class="card">
+		  	<div class="item item-text-wrap">
+		    El agua que gastamos en casa, en los campos de cultivo y en las fabricas termina en el mar. El mar es capaz de limpiarse por si solo si esta poco contaminado. Pero actualmente .desembocan tantos desagues en el mar, que en algunas zonas se ha contaminado mucho.
+		  	</div>
+		</div>
+		<button class="button button-calm" style="margin: 10% 0px 0px 35%;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==2">
+ 		<div class="card">
+		  	<div class="item item-text-wrap">
+			   Podemos contribuir a reducir la contaminacion recogiendo el aceite de cocinar sobrante con papel absorvente o periodicos que se tiran a la basura. Es importante que descubramos que cosas contaminan y nos esforcemos por controlarlas.
+		  	</div>
+		</div>
+		<button class="button button-calm" style="margin: 10% 0px 0px 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<button class="button button-calm" style="margin: 10% 0px 0px 0px;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==3">
+ 		<div class="card">
+		  <div class="item item-text-wrap">
+		   Para reducir la contaminacion producida por una sola cucharada de aceite se necesitan quince baniaderas llenas de agua.
+		  </div>
+		</div>
+		<button class="button button-calm" style="margin: 10% 0px 0px 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<button class="button button-calm" style="margin: 10% 0px 0px 0px;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==4">
+ 		<div class="card">
+		  <div class="item item-text-wrap">
+		   Los rios y lagos se contaminan con fertilizantes y otros productos quimicos agricolas. Las fabricas tambien contaminan el agua vertiendo en ella sus residuos. Las grasas, jabones y detergentes que arrojamos por el desague tambien terminan contaminando los rios y los lagos.
+		  </div>
+		</div>
+		<button class="button button-calm" style="margin: 10% 0px 0px 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<button class="button button-calm" style="margin: 10% 0px 0px 0px;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==5">
+ 		<div class="card">
+		  <div class="item item-text-wrap">
+		   Las aguas residuales domesticas e industriales son una causa importante de contaminacion en rios y lagos. Se requiere de un esfuerzo general para reducir la contaminacion de las aguas residuales y asi mantener limpios rios y lagos. Los detergentes sin fosfatos y los limpiadores que se anuncian como ecologicos pueden contribuir a ello.
+		  </div>
+		</div>
+		<button class="button button-calm" style="margin: 5% 0px 0px 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<a class="button button-calm" style="margin: 5% 0px 0px 0px;" href="#/app/arboles">Los arboles</a>
+ 	</div>
+  </ion-content>
+</ion-view>

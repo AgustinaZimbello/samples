@@ -1,0 +1,66 @@
+<ion-view view-title="">
+  <ion-content>
+    <h3 class="title text-center" style="margin-top:5%">{{title}}</h3>
+  <div ng-show="show==1">
+    <div class="card">
+        <div class="item item-text-wrap">
+        Si tomamos el sol durante mucho rato nos quemamos la piel. El bronceado lo producen los rayos ultravioleta del sol que llegan hasta nuestra piel. Las dosis demasiado altas de rayos ultravioleta son peligrosas para nosotros y para muchos seres vivos. Por suerte, la capa de ozono que hay en la atmosfera terrestre absorve la mayor parte de los rayos. Sin la capa de ozono casi todos los seres vivos moririan.
+        </div>
+    </div>
+    <a class="button button-assertive" style="margin: 0 0 0 15%;" href="#/app/arboles">Los arboles</a>
+    <button class="button button-assertive" style="" ng-click="siguiente()">
+        Siguiente
+    </button>
+  </div>
+  <div ng-show="show==2">
+    <div class="card">
+        <div class="item item-text-wrap">
+         Durante mucho tiempo, los llamados gases fluorocarbonados que se emplean en muchos productos humanos han estado subiendo a la parte alta de la atmosfera. Esta contamiacion esta destruyendo la capa de ozono. Ahora, cada vez mas rayos ultravioleta peligrosos estan atravesando la capa protectora y alcanzan la superficie terrestre.
+        </div>
+    </div>
+    <button class="button button-assertive" style="margin: 0 0 0 20%;" ng-click="anterior()">
+        Anterior
+    </button>
+    <button class="button button-assertive" style="" ng-click="siguiente()">
+        Siguiente
+    </button>
+  </div>
+  <div ng-show="show==3">
+    <div class="card">
+      <div class="item item-text-wrap">
+       Si la cantidad de rayos ultravioleta que llegan a la tierra aumenta mucho, mas gente tendra problemas en la piel, las plantas cambiarian de color y los cultivos no producirian cosechas. Los productos que destruyen la capa de ozono los fabrican las industrias. Algunos de los objetos que contienen fluorocarbonados son aires acondicionados, desodorantes, aerosoles insecticidas, heladeras.
+      </div>
+    </div>
+    <button class="button button-assertive" style="margin: 0 0 0 20%;" ng-click="anterior()">
+        Anterior
+    </button>
+    <button class="button button-assertive" style="" ng-click="siguiente()">
+        Siguiente
+    </button>
+  </div>
+  <div ng-show="show==4">
+    <div class="card">
+      <div class="item item-text-wrap">
+       Si la temperatura de la Tierra aumentara mucho, el hielo y la nieve de los lugares frios se fundirian, haciendo que aumentara el nivel del mar. Si esto ocurriera, las regiones costeras se inundarian. Todo lo que estuviera cerca de la orilla desapareceria bajo las aguas. Los humos de los automoviles y las fabricas se concentran en la atmosfera e impiden que el calor del aire se pierda en el espacio. Esto hace que el planeta este mas caliente.
+      </div>
+    </div>
+    <button class="button button-assertive" style="margin: 0 0 0 20%;" ng-click="anterior()">
+        Anterior
+    </button>
+    <button class="button button-assertive" style="" ng-click="siguiente()">
+        Siguiente
+    </button>
+  </div>
+  <div ng-show="show==5">
+    <div class="card">
+      <div class="item item-text-wrap">
+       Los cientificos saben que con el tiempo todas las especies acaban por extinguirse. Pero en la historia reciente, ha sido la humanidad la que ha causado gran numero de extinciones. Esto lo ha hecho a base de exterminarlas directamente o bien destruyendo sus habitats. Como las especies dependen unas de otras, la desaparicion de algunas afecta a todas las demas, incluidos nosotros.
+      </div>
+    </div>
+    <button class="button button-assertive" style="margin: 0 0 0 20%;" ng-click="anterior()">
+        Anterior
+    </button>
+    <a class="button button-assertive" style="" href="#/app/contaminacion">Contaminacion</a>
+  </div>
+  </ion-content>
+</ion-view>

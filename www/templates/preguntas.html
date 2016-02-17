@@ -1,0 +1,139 @@
+<ion-view view-title="">
+  <ion-content>
+  	<h3 class="title text-center" style="margin-top:10%;">{{title}}</h3>
+  	<div ng-show="modoPreguntas">
+	 	<div ng-show="show==1">
+	 		<h4 class="text-center">{{pregunta1}}</h4>
+	 		<form name="myForm" ng-submit="siguiente()">
+		 		<ion-list ng-repeat="v in respuestas1">
+		  			<ion-radio ng-change="sendRespuesta(v,1)" ng-model="choice1" ng-value="{{v.value}}" required>{{ v.respuesta }}</ion-radio>
+				</ion-list>
+				<button ng-disabled="choices[1]==undefined" type="submit" class="button button-calm" style="margin: 10% 0px 0px 35%;">
+		  			Siguiente
+				</button>
+			</form>
+	 	</div>
+	 	<div ng-show="show==2">
+	 		<h4 class="text-center">{{pregunta2}}</h4>
+	 		<form name="myForm" ng-submit="siguiente()">
+		 		<ion-list ng-repeat="v in respuestas2">
+		  			<ion-radio ng-change="sendRespuesta(v,2)" ng-model="choice1" ng-value="{{v.value}}" required>{{ v.respuesta }}</ion-radio>
+				</ion-list>
+				<button ng-disabled="choices[2]==undefined" type="submit" class="button button-calm" style="margin: 10% 0px 0px 35%;">
+		  			Siguiente
+				</button>
+			</form>
+	 	</div>
+	 	<div ng-show="show==3">
+	 		<h4 class="text-center">{{pregunta3}}</h4>
+	 		<form name="myForm" ng-submit="siguiente()">
+		 		<ion-list ng-repeat="v in respuestas3">
+		  			<ion-radio ng-change="sendRespuesta(v,3)" ng-model="choice1" ng-value="{{v.value}}" required>{{ v.respuesta }}</ion-radio>
+				</ion-list>
+				<button ng-disabled="choices[3]==undefined" type="submit" class="button button-calm" style="margin: 10% 0px 0px 35%;">
+		  			Siguiente
+				</button>
+			</form>
+	 	</div>
+	 	<div ng-show="show==4">
+	 		<h4 class="text-center">{{pregunta4}}</h4>
+	 		<form name="myForm" ng-submit="siguiente()">
+		 		<ion-list ng-repeat="v in respuestas4">
+		  			<ion-radio ng-change="sendRespuesta(v,4)" ng-model="choice1" ng-value="{{v.value}}" required>{{ v.respuesta }}</ion-radio>
+				</ion-list>
+				<button ng-disabled="choices[4]==undefined" type="submit" class="button button-calm" style="margin: 10% 0px 0px 35%;">
+		  			Siguiente
+				</button>
+			</form>
+	 	</div>
+	 	<div ng-show="show==5">
+	 		<h4 class="text-center">{{pregunta5}}</h4>
+	 		<form name="myForm" ng-submit="siguiente()">
+		 		<ion-list ng-repeat="v in respuestas5">
+		  			<ion-radio ng-change="sendRespuesta(v,5)" ng-model="choice1" ng-value="{{v.value}}" required>{{ v.respuesta }}</ion-radio>
+				</ion-list>
+				<button ng-disabled="choices[5]==undefined" type="submit" class="button button-calm" style="margin: 10% 0px 0px 35%;">
+		  			Siguiente
+				</button>
+			</form>
+	 	</div>
+	 	<div ng-show="show==6">
+	 		<h4 class="text-center">{{pregunta6}}</h4>
+	 		<form name="myForm" ng-submit="siguiente()">
+		 		<ion-list ng-repeat="v in respuestas4">
+		  			<ion-radio ng-change="sendRespuesta(v,6)" ng-model="choice1" ng-value="{{v.value}}" required>{{ v.respuesta }}</ion-radio>
+				</ion-list>
+				<button ng-disabled="choices[6]==undefined" type="submit" class="button button-calm" style="margin: 10% 0px 0px 35%;">
+		  			Siguiente
+				</button>
+			</form>
+	 	</div>
+ 	</div>
+ 	<div ng-show="modoRespuestas">
+ 	<div ng-show="show==1">
+ 		<h4 class="text-center">{{pregunta1}}</h4>
+ 		<ul class="list" ng-repeat="v in respuestas1">
+		    <li class="item" ng-class="{ 'correcta': v.value, 'incorrecta': (!v.value && choices[1].respuesta==v.respuesta) }">
+		      {{v.respuesta}}
+		    </li>
+		</ul>
+		<button class="button button-calm" style="margin: 0 0 0 35%;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==2">
+ 		<h4 class="text-center">{{pregunta2}}</h4>
+ 		<ul class="list" ng-repeat="v in respuestas2">
+		    <li class="item" ng-class="{ 'correcta': v.value, 'incorrecta': (!v.value && choices[2].respuesta==v.respuesta) }">
+		      {{v.respuesta}}
+		    </li>
+		</ul>
+		<button class="button button-calm" style="margin: 0 0 0 35%;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==3">
+ 		<h4 class="text-center">{{pregunta3}}</h4>
+ 		<ul class="list" ng-repeat="v in respuestas3">
+		    <li class="item" ng-class="{ 'correcta': v.value, 'incorrecta': (!v.value && choices[3].respuesta==v.respuesta) }">
+		      {{v.respuesta}}
+		    </li>
+		</ul>
+		<button class="button button-calm" style="margin: 0 0 0 35%;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==4">
+ 		<h4 class="text-center">{{pregunta4}}</h4>
+ 		<ul class="list" ng-repeat="v in respuestas4">
+		    <li class="item" ng-class="{ 'correcta': v.value, 'incorrecta': (!v.value && choices[4].respuesta==v.respuesta) }">
+		      {{v.respuesta}}
+		    </li>
+		</ul>
+		<button class="button button-calm" style="margin: 0 0 0 35%;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==5">
+ 		<h4 class="text-center">{{pregunta5}}</h4>
+ 		<ul class="list" ng-repeat="v in respuestas5">
+		    <li class="item" ng-class="{ 'correcta': v.value, 'incorrecta': (!v.value && choices[5].respuesta==v.respuesta) }">
+		      {{v.respuesta}}
+		    </li>
+		</ul>
+		<button class="button button-calm" style="margin: 0 0 0 35%;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==6">
+ 		<h4 class="text-center">{{pregunta6}}</h4>
+ 		<ul class="list" ng-repeat="v in respuestas6">
+		    <li class="item" ng-class="{ 'correcta': v.value, 'incorrecta': (!v.value && choices[6].respuesta==v.respuesta) }">
+		      {{v.respuesta}}
+		    </li>
+		</ul>
+		<a class="button button-energized" style="margin: 0 0 0 35%;" href="#/app/home">Fin!</a>
+ 	</div>
+ 	</div>
+  </ion-content>
+</ion-view>

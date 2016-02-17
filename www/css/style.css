@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+.title{
+	color:rgba(26, 167, 16, 0.74);
+}
+.incorrecta{
+	background-color: rgba(255, 0, 0, 0.26) !important;
+}
+.correcta{
+	background-color: #8DF08D !important;
+}
+.item-radio .item-content {
+    padding-right: 0;
+}

@@ -1,0 +1,53 @@
+<ion-view view-title="">
+  <ion-content>
+    <h3 class="title text-center" style="margin-top:5%">{{title}}</h3>
+  <div ng-show="show==1">
+    <div class="card">
+        <div class="item item-text-wrap">
+        La contaminacion se produce cuando va a parar al agua o al aire residuos toxicos. Los lugares alejados de las ciudades tambien se contaminan a causa de los residuos que le llegan arrastrados por el viento y las corrientes marinas.
+        </div>
+    </div>
+    <a class="button button-energized" style="" href="#/app/calentamiento">Calentamiento Global</a>
+    <button class="button button-energized" style="" ng-click="siguiente()">
+        Siguiente
+    </button>
+  </div>
+  <div ng-show="show==2">
+    <div class="card">
+        <div class="item item-text-wrap">
+         Como en las ciudades viven muchas personas, tambien hay muchos automoviles y fabricas. Los humos de los autos y de las fabricas ensucian el aire que respiramos. Los arboles plantados a lo largo de las calles y carreteras contribuyen mucho a que nuestras ciudades sean mas lindas y a que en ellas se viva mejor. Ademas, nos proporcionan sombra y oxigeno para respirar.
+        </div>
+    </div>
+    <button class="button button-energized" style="margin: 0 0 0 20%;" ng-click="anterior()">
+        Anterior
+    </button>
+    <button class="button button-energized" style="" ng-click="siguiente()">
+        Siguiente
+    </button>
+  </div>
+  <div ng-show="show==3">
+    <div class="card">
+      <div class="item item-text-wrap">
+       Reciclar algo significa volver a aprovecharlo despues de haberlo usado. Las materias primas para hacer los objetos que usamos provienen de la naturaleza. Si no reciclamos los materiales llegara un dia en que habremos gastado todos los recursos naturales y el medio ambiente quedara arruinado.
+      </div>
+    </div>
+    <button class="button button-energized" style="margin: 10% 0px 0px 20%;" ng-click="anterior()">
+        Anterior
+    </button>
+    <button class="button button-energized" style="margin: 10% 0px 0px 0px;" ng-click="siguiente()">
+        Siguiente
+    </button>
+  </div>
+  <div ng-show="show==4">
+    <div class="card">
+      <div class="item item-text-wrap">
+       Los arboles hacen dos cosas muy importantes: almacenar agua y fabricar oxigeno. Los productos de la madera se pueden reciclar para fabricar cosas como carton y papel. Gracias a esto no es necesario cortar tantos arboles.
+      </div>
+    </div>
+    <button class="button button-energized" style="margin: 0 0 0 20%;" ng-click="anterior()">
+        Anterior
+    </button>
+    <a class="button button-energized" style="" href="#/app/preguntas">A jugar!</a>
+  </div>
+  </ion-content>
+</ion-view>

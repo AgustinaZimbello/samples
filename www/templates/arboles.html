@@ -1,0 +1,79 @@
+<ion-view view-title="">
+  <ion-content>
+  	<h3 class="title text-center" style="margin-top:5%">{{title}}</h3>
+ 	<div ng-show="show==1">
+ 		<div class="card">
+		  	<div class="item item-text-wrap">
+		    En los bosques abunda el alimento para los animales. Hay todo tipo de semillas, frutos y hojas, asi como numerosos insectos. Muchos animales construyen su refugio en los arboles. Alli sacan adelante a sus crias e hibernan durante el invierno. EN los arboles tambien pueden ocultarse de sus enemigos.
+		  	</div>
+		</div>
+		<a class="button button-balanced" style="margin: 0 0 0 15%;" href="#/app/agua">El agua</a>
+		<button class="button button-balanced" style="" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==2">
+ 		<div class="card">
+		  	<div class="item item-text-wrap">
+			   Hoy hay mucha mas gente en la Tierra de lo que habia hace doscientos anios. Para poder alimentarla se han talado grandes extensiones del bosque, para dejar espacio a los cultivos y a los pastos del ganado. Tambien se talan arboles para hacer lenia o papel y como material de construccion. Por eso, cada anio desaparece una parte del bosque equivalente a la superficie de la isla de Cuba.
+		  	</div>
+		</div>
+		<button class="button button-balanced" style="margin: 0 0 0 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<button class="button button-balanced" style="" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==3">
+ 		<div class="card">
+		  <div class="item item-text-wrap">
+		   En los ultimos 200 anios, la extension de las selvas se ha reducido enormemente por la explotacion humana. Si se detienen el despilfarro de productos forestales y la tala indiscriminada de arboles, aun sera posible salvar las selvas del planeta.
+		  </div>
+		</div>
+		<button class="button button-balanced" style="margin: 10% 0px 0px 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<button class="button button-balanced" style="margin: 10% 0px 0px 0px;" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==4">
+ 		<div class="card">
+		  <div class="item item-text-wrap">
+		   Los automoviles y las fabricas han hecho la vida de las personas mas facil. Pero los gases que salen de los tubos de escape y de las chimeneas de las fabricas son daninos para los seres vivos. Estos gases se elevan al aire y se mezclan con el agua de las nubes. Esto hace que la lluvia que cae de esas nubes sea acida. Cuando la lluvia acida penetra en el suelo, mata a los arboles asi como a las demas plantas.
+		  </div>
+		</div>
+		<button class="button button-balanced" style="margin: 0 0 0 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<button class="button button-balanced" style="" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==5">
+ 		<div class="card">
+		  <div class="item item-text-wrap">
+		   Aprovechamos los arboles para hacer muchas cosas, por ejemplo muebles y papel. Ademas nos proporcionan el oxigeno que necesitamos. Por eso tenemos que cuidarlos. Por ejemplo cuando vayas de campamento o de excursion junta y llevate toda tu basura; comproba que el fuego este bien apagado; no rompas ramas de los arboles ni danies a los arboles de alguna otra manera.
+		  </div>
+		</div>
+		<button class="button button-balanced" style="margin: 0 0 0 20%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<button class="button button-balanced" style="" ng-click="siguiente()">
+  			Siguiente
+		</button>
+ 	</div>
+ 	<div ng-show="show==6">
+ 		<div class="card">
+		  <div class="item item-text-wrap">
+		   En todo el mundo se actua para salvar a los arboles. Se plantan arboles nuevos para reemplazar a los que se han cortado y en algunos lugares esta prohibido cortar mas arboles. En otros lugares se protege a los arboles de la lluvia acida y se buscan formas de reciclar los productos de la madera.
+		  </div>
+		</div>
+		<button class="button button-balanced" style="margin: 0 0 0 5%;" ng-click="anterior()">
+  			Anterior
+		</button>
+		<a class="button button-balanced" style="" href="#/app/calentamiento">Calentamiento Global</a>
+ 	</div>
+  </ion-content>
+</ion-view>
